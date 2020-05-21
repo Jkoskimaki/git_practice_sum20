@@ -5,8 +5,8 @@ def puts_git(cmd)
   menu
 end
 def menu
-  puts 'Main Menu'.colorize(:cyan)
-  puts '1: Enter git command'
+  puts 'Main Menu'.colorize(:blue)
+  puts '1: Enter git command'.colorize(:green)
   puts '2: Exit'.colorize(:red)
   choice = gets.to_i
   case choice
@@ -17,7 +17,7 @@ def menu
   when 2
     exit
   else
-    puts 'Invalid choice'
+    puts 'Invalid choice!'
     menu
   end
 end
